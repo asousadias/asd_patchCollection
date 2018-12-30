@@ -44,7 +44,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 126.0, 128.0, 163.0, 20.0 ],
-					"presentation_linecount" : 2,
+					"presentation" : 1,
+					"presentation_rect" : [ 126.0, 128.0, 163.0, 20.0 ],
 					"text" : "must refer the coll to process"
 				}
 
@@ -56,7 +57,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 8.0, 104.0, 74.0, 22.0 ],
+					"patching_rect" : [ 5.0, 104.0, 74.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 5.0, 104.0, 74.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -69,6 +72,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 693.0, 78.0, 97.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 693.0, 78.0, 97.0, 20.0 ],
 					"text" : "Coll to process"
 				}
 
@@ -95,6 +100,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 486.5, 78.0, 151.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 486.5, 78.0, 151.0, 20.0 ],
 					"text" : "coll is read outside patcher"
 				}
 
@@ -106,6 +113,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 105.5, 78.0, 153.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 105.5, 78.0, 153.0, 20.0 ],
 					"text" : "coll is read inside patcher"
 				}
 
@@ -118,7 +127,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 693.0, 150.0, 221.0, 33.0 ],
+					"presentation" : 1,
 					"presentation_linecount" : 2,
+					"presentation_rect" : [ 693.0, 150.0, 221.0, 33.0 ],
 					"text" : "Each line represents an event containing several commands to trigger."
 				}
 
@@ -130,6 +141,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 693.0, 100.0, 221.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 693.0, 100.0, 221.0, 20.0 ],
 					"text" : "Example of list of commands to process"
 				}
 
@@ -142,6 +155,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 455.5, 196.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 455.5, 196.0, 50.0, 22.0 ],
 					"text" : "next"
 				}
 
@@ -154,7 +169,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 393.0, 155.0, 31.0, 31.0 ]
+					"patching_rect" : [ 387.5, 155.0, 31.0, 31.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 387.5, 155.0, 31.0, 31.0 ]
 				}
 
 			}
@@ -169,7 +186,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 393.0, 196.0, 56.0, 22.0 ],
+					"patching_rect" : [ 387.5, 196.0, 56.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 387.5, 196.0, 56.0, 22.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"triscale" : 0.9
 				}
@@ -185,6 +204,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 673.0, 338.0, 79.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 673.0, 338.0, 79.0, 22.0 ],
 					"text" : "help"
 				}
 
@@ -199,6 +220,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 604.5, 338.0, 58.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 604.5, 338.0, 58.0, 22.0 ],
 					"text" : "read"
 				}
 
@@ -213,6 +236,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 539.5, 338.0, 58.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 539.5, 338.0, 58.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -226,6 +251,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 539.5, 317.0, 117.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 539.5, 317.0, 117.0, 20.0 ],
 					"text" : "SYNTAX definition"
 				}
 
@@ -253,6 +280,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 387.5, 78.0, 97.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 387.5, 78.0, 97.0, 20.0 ],
 					"text" : "== Version 2 =="
 				}
 
@@ -265,6 +294,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 5.0, 78.0, 97.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 5.0, 78.0, 97.0, 20.0 ],
 					"text" : "== Version 1 =="
 				}
 
@@ -358,7 +389,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 393.0, 252.0, 120.0, 22.0 ],
+					"patching_rect" : [ 387.5, 252.0, 120.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 387.5, 252.0, 120.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1
 					}
@@ -376,8 +409,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 393.0, 411.0, 108.0, 22.0 ],
-					"text" : "print Command"
+					"patching_rect" : [ 387.5, 411.0, 108.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 387.5, 411.0, 108.0, 22.0 ],
+					"text" : "print Command2"
 				}
 
 			}
@@ -389,6 +424,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 52.0, 220.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 52.0, 220.0, 50.0, 22.0 ],
 					"text" : "next"
 				}
 
@@ -403,6 +440,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 188.0, 344.0, 58.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 188.0, 344.0, 58.0, 22.0 ],
 					"text" : "read"
 				}
 
@@ -417,7 +456,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 393.0, 381.0, 231.0, 22.0 ],
+					"patching_rect" : [ 387.5, 381.0, 231.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 387.5, 381.0, 231.0, 22.0 ],
 					"text" : "asd.syntaxParser2 SYNTAX.txt"
 				}
 
@@ -431,7 +472,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 8.0, 128.0, 113.0, 22.0 ],
+					"patching_rect" : [ 5.0, 128.0, 113.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 5.0, 128.0, 113.0, 22.0 ],
 					"text" : "refer An-Example",
 					"textcolor" : [ 0.7843137383461, 0.996078431606293, 0.862745106220245, 1.0 ]
 				}
@@ -464,6 +507,8 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 693.0, 122.0, 164.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 693.0, 122.0, 164.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1
 					}
@@ -483,6 +528,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 255.0, 344.0, 79.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 255.0, 344.0, 79.0, 22.0 ],
 					"text" : "help"
 				}
 
@@ -497,6 +544,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 123.0, 344.0, 58.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 123.0, 344.0, 58.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -511,6 +560,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 69.0, 271.0, 58.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 69.0, 271.0, 58.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -523,7 +574,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 34.0, 154.0, 31.0, 31.0 ]
+					"patching_rect" : [ 34.0, 154.0, 31.0, 31.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 34.0, 154.0, 31.0, 31.0 ]
 				}
 
 			}
@@ -539,6 +592,8 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 34.0, 191.0, 56.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 34.0, 191.0, 56.0, 22.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"triscale" : 0.9
 				}
@@ -552,7 +607,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 150.0, 234.0, 31.0, 31.0 ]
+					"patching_rect" : [ 150.0, 234.0, 31.0, 31.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 150.0, 234.0, 31.0, 31.0 ]
 				}
 
 			}
@@ -564,8 +621,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.0, 422.0, 108.0, 22.0 ],
-					"text" : "print Command"
+					"patching_rect" : [ 5.0, 411.0, 108.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 5.0, 411.0, 108.0, 22.0 ],
+					"text" : "print Command1"
 				}
 
 			}
@@ -579,6 +638,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 150.0, 271.0, 68.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 150.0, 271.0, 68.0, 22.0 ],
 					"text" : "verbose $1"
 				}
 
@@ -593,7 +654,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 8.0, 381.0, 199.0, 22.0 ],
+					"patching_rect" : [ 5.0, 381.0, 199.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 5.0, 381.0, 199.0, 22.0 ],
 					"text" : "asd.syntaxParser1 SYNTAX.txt"
 				}
 
@@ -607,6 +670,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 126.0, 323.0, 117.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 126.0, 323.0, 117.0, 20.0 ],
 					"text" : "SYNTAX definition"
 				}
 
@@ -774,21 +839,21 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "asd.syntaxParser1.maxpat",
-				"bootpath" : "~/Documents/Documents1/-Recherche/-Thèse-Doc2/-MaxOS-9-X tests+these/PatchsThese/C10_1_1_03-Syntax-parser",
+				"bootpath" : "~/Documents/GitHub/asd_patchCollection/asdSyntaxParser",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SYNTAX.txt",
-				"bootpath" : "~/Documents/Documents1/-Recherche/-Thèse-Doc2/-MaxOS-9-X tests+these/PatchsThese/C10_1_1_03-Syntax-parser",
+				"bootpath" : "~/Documents/GitHub/asd_patchCollection/asdSyntaxParser",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "asd.syntaxParser2.maxpat",
-				"bootpath" : "~/Documents/Documents1/-Recherche/-Thèse-Doc2/-MaxOS-9-X tests+these/PatchsThese/C10_1_1_03-Syntax-parser",
+				"bootpath" : "~/Documents/GitHub/asd_patchCollection/asdSyntaxParser",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
