@@ -30,6 +30,7 @@ http://jim.afim-asso.org/jim2002/articles/L27_Vaggione.pdf.
 
 ## Revision history
 - 2018, December 29: Initial release on GitHub.
+- 2007: design and programming.
 
 ### Disclaimer:
 These patches are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
