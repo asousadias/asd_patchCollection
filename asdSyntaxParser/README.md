@@ -37,12 +37,16 @@ This general purpose language parser requires that a score (text) must comply th
 
 OBS: Note that brackets [ ] mean that stuff inside is optional, [ ]* means that stuff inside is optional and can be repeated.<br/>
 
-An example:<br/>
+An example of a __syntax file__:<br/>
 `loop, 1;` (means keyword _loop_ must be followed by one parameter)<br/>
 `liss-x, 4;` (means keyword _liss-x_ must be followed by four parameters)<br/>
 `liss-y, 4;` (means keyword _liss-y_ must be followed by four parameters)<br/>
 `point, 2;` (means keyword _point_ must be followed by two parameters)<br/>
 
+Example of a score file that complies with the above grammar:<br/>
+`1, _loop_ sample liss-x 2 2 2 2 liss-y 3 3 3 3 point -1. 0.75 loop 1;`<br/>
+`2, liss-x 1 2 3 4 loop boink;`<br/>
+`3, liss-y 3 3 3 3  point 2. 2.;`<br/>
 
 ## Operation Mode
 Define a syntax file (see _SYNTAX.txt_ for example)<br/>
