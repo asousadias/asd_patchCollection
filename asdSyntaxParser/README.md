@@ -21,10 +21,10 @@ There's no need to write each action in a line in any specific order. Moreover, 
 ### Grammar definition
 This general purpose language parser requires that a score (text) must comply the following grammar definition:<br/>
 
-- Score ::= Line ';' [<cr> Line ';']*<br/>
+- Score ::= Line ';' [\<cr\> Line ';']*<br/>
 (means that a score is a list of lines)<br/>
 
-- Line ::= lineNumber , Action [, Action]*
+- Line ::= lineNumber , Action [, Action]*<br/>
 (each line has a line number, followed by a comma, followed by one or more actions, ending with a dot-comma)<br/>
 
 - Action ::= Keyword [Parameter [ Parameter]*]<br/>
@@ -32,8 +32,8 @@ This general purpose language parser requires that a score (text) must comply th
 
 - lineNumber ::= <positive integer including 0><br/>
 - Keyword ::= <symbol><br/>
-- Parameter ::= <symbol>|<float>|<integer><br/>
-- <cr> - carriage return<br/>
+- Parameter ::= \<symbol\>|<float>|<integer><br/>
+- \<cr\> - carriage return<br/>
 
 OBS: Note that brackets [ ] mean that stuff inside is optional, [ ]* means that stuff inside is optional and can be repeated.<br/>
 
