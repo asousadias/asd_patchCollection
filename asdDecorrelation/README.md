@@ -32,13 +32,13 @@ http://jim.afim-asso.org/jim2002/articles/L27_Vaggione.pdf.
 - 2018, December 29: Initial release on GitHub.
 - 2007: design and programming.
 
-### Disclaimer:
-These patches are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+## Disclaimer:
+These patches are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.<br>
 
 
 
 
-Universidade de Lisboa, Faculdade de Belas-Artes
+Universidade de Lisboa, Faculdade de Belas-Artes<br>
 Largo da Academia Nacional de Belas-Artes<br>
 1249-058 Lisboa, Portugal<br>
 http://www.belasartes.ulisboa.pt/
