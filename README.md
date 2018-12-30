@@ -12,7 +12,7 @@ Enjoy!<br/>
 NOTE: this is a working in progress, continuous update.<br>
 
 ## Patch List
-- [asdDecorrelation] - Temporal micro-decorrelation, based upon Horacio Vaggione's ideas.
+- [asdDecorrelation] (/asdDecorrelation) - Temporal micro-decorrelation, based upon Horacio Vaggione's ideas.
 
 ## References
 Sousa Dias, A. (2005). _L´Objet Sonore: Situation, Évaluation et Potentialités. Un paradigme pour la création d´outils de composition musicale._ Université Paris 8.<br>
