@@ -1,0 +1,1 @@
+loop, 1;liss-x, 4;liss-y, 4;point, 2;
