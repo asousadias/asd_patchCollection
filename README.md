@@ -7,12 +7,12 @@ a.sousadias@belasartes.ulisboa.pt
 
 ## Description:
 Patches programmed in Max/MSP exploring several techniques.<br>
-Some are rather old, but nevertheless, one never knows.<br/>
+Most of them were compiled for my doctoral thesis, in 2005. Hence, some are rather old, but nevertheless, one never knows.<br/>
 Enjoy!<br/>
 NOTE: this is a working in progress, continuous update.<br>
 
 ## Patch List
-- [asdDecorrelation] (/asdDecorrelation) - Temporal micro-decorrelation, based upon Horacio Vaggione's ideas.
+- asdDecorrelation - Temporal micro-decorrelation, based upon Horacio Vaggione's ideas.
 
 ## References
 Sousa Dias, A. (2005). _L´Objet Sonore: Situation, Évaluation et Potentialités. Un paradigme pour la création d´outils de composition musicale._ Université Paris 8.<br>
