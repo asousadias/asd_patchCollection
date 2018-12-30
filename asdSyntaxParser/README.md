@@ -28,11 +28,11 @@ This general purpose language parser requires that a score (text) must comply th
 (each line has a line number, followed by a comma, followed by one or more actions, ending with a dot-comma)<br/>
 
 - Action ::= Keyword [Parameter [ Parameter]*]<br/>
-(an action is simply a symbol, <loop>, <uncleBennie>, etc. It can be followed by parameters. Note there are no commas in between)<br/>
+(an action is simply a symbol, \<loop\>, \<uncleBennie\>, etc. It can be followed by parameters. Note there are no commas in between)<br/>
 
 - lineNumber ::= <positive integer including 0><br/>
-- Keyword ::= <symbol><br/>
-- Parameter ::= \<symbol\>|<float>|<integer><br/>
+- Keyword ::= \<symbol\><br/>
+- Parameter ::= \<symbol\>|\<float\>|\<integer\><br/>
 - \<cr\> - carriage return<br/>
 
 OBS: Note that brackets [ ] mean that stuff inside is optional, [ ]* means that stuff inside is optional and can be repeated.<br/>
