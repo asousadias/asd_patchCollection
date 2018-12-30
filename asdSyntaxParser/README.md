@@ -45,9 +45,9 @@ An example of a __syntax file__:<br/>
 
 Example of a score file that complies with the above grammar:<br/>
 ```
-1, loop sample liss-x 2 2 2 2 liss-y 3 3 3 3 point -1. 0.75 loop 1;`<br/>
-2, liss-x 1 2 3 4 loop boink;`<br/>
-3, liss-y 3 3 3 3  point 2. 2.;`<br/>
+1, loop sample liss-x 2 2 2 2 liss-y 3 3 3 3 point -1. 0.75 loop 1;
+2, liss-x 1 2 3 4 loop boink;
+3, liss-y 3 3 3 3  point 2. 2.;
 ```
 
 ## Operation Mode
