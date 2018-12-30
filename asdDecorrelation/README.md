@@ -7,9 +7,11 @@ Antonio de SOUSA DIAS<br>
 a.sousadias@belasartes.ulisboa.pt
 
 ## Description:
-This Max/MSP patch is provided to observe the perceptive effects of temporal de-correlation. <br/>
-
-It was first programmed in 2007 and it is inspired by the works of Horacio Vagione, namely the text "Décorrélation microtemporelle, morphologies et figurations spatiales."
+This Max/MSP patch was first programmed in 2007 and it is inspired by the works of Horacio Vagione, namely the text _Décorrélation microtemporelle, morphologies et figurations spatiales_.<br/>
+It is provided to observe the perceptive effects of temporal de-correlation, hoping to contribute to the understanding of the relationship between a sound delay and its percetual effect.<br/>
+Example:<br/>
+In the figure below, to simulate a perceptual effect of source location at left, a 22 cm value will give us the number of samples needed to set the desired delay on the right channel.
+![Decorrelation Example](asd_decorrelation01.png)
 
 ## Operation Mode
 Setup is straightforward. Use the _asd.decorrelation.maxhelp_ patch to test and play around.<br>
