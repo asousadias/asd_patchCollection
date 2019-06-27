@@ -6,7 +6,7 @@ Programming<br>
 Antonio de SOUSA DIAS<br>
 a.sousadias@belasartes.ulisboa.pt
 
-## Description:
+## Description
 This Max/MSP patch was first programmed in 2007 and it is inspired by the works of __Horacio Vagione__, namely the text _Décorrélation microtemporelle, morphologies et figurations spatiales_.<br/>
 It is provided to observe the perceptive effects of temporal de-correlation, hoping to contribute to the understanding of the relationship between a sound delay and its percetual effect.<br/>
 Example:<br/>
