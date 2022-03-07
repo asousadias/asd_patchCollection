@@ -16,22 +16,23 @@ The resulting data is feed into a Bach.roll object for later use with a score ed
 
 ### Input:
 The js object accepts the following input messages:
-- fCF followed by a list of MIDI note values the "Cantus Firmus".<br>
-- fGLOS followed by a list of MIDI note values the melodic sequence to be used as an ornamentation reservoir.<br>
+- _fCF_ followed by a list of MIDI note values the "Cantus Firmus".<br>
+- _fGLOS_ followed by a list of MIDI note values the melodic sequence to be used as an ornamentation reservoir.<br>
 - _bang_ triggers output.<br>
-- CFdur _integer_: Length of CF notes, for score viewing purposes (ms, default 4000).<br>
-- GLOSdur _integer_: Length of each generated note (ms, default 125).<br>
-- GLOStab _integer_: Length of each tab if exceds the number of voices available (ms, default 2000).<br>
-- nVoices _integer_: The number of staves/lines (channels).<br>
-- include_intervals 0/1: Show generated melodic sequences starting with current CF note and ending with next CF note.<br>
-- include_uniss 0/1: Show generated melodic sequences starting and ending with current CF note.<br>
-- safe_offset 0/1: Add tabs in case of sequence overlap.<br>
-- show_figur 0/1: Add a voice with the ornamentation reservoir transposed to each of the CF notes.<br>
-- remove_dups 0/1: Removes duplicated ornamentation sequence generated for each of the CF notes.<br>
+- _CFdur_ _integer_: Length of CF notes, for score viewing purposes (ms, default 4000).<br>
+- _GLOSdur_ _integer_: Length of each generated note (ms, default 125).<br>
+- _GLOStab_ _integer_: Length of each tab if exceds the number of voices available (ms, default 2000).<br>
+- _nVoices_ _integer_: The number of staves/lines (channels).<br>
+- _include\_intervals_ 0/1: Show generated melodic sequences starting with current CF note and ending with next CF note.<br>
+- _include\_uniss_ 0/1: Show generated melodic sequences starting and ending with current CF note.<br>
+- _safe\_offset_ 0/1: Add tabs in case of sequence overlap.<br>
+- _show\_figur_ 0/1: Add a voice with the ornamentation reservoir transposed to each of the CF notes.<br>
+- _remove\_dups_ 0/1: Removes duplicated ornamentation sequence generated for each of the CF notes.<br>
 
 ### Output:
-- Instructions for a Bach.roll object.<br>
-Note: connect output to a route object to retrieve data: [route toBachRoll]->[Bach.roll]<br>
+- Instructions for a _Bach.roll_ object.<br>
+
+Note: connect the output to a _route_ object to retrieve data: [route toBachRoll]->[Bach.roll]<br>
 
 ## Remarks
 The current folder contains:<br>
