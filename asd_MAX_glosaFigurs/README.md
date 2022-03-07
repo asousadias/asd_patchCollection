@@ -16,9 +16,9 @@ The resulting data is feed into a Bach.roll object for later use with a score ed
 
 ### Input:
 The js object accepts the following input messages:
-- _fCF_ followed by a list of MIDI note values the "Cantus Firmus".<br>
-- _fGLOS_ followed by a list of MIDI note values the melodic sequence to be used as an ornamentation reservoir.<br>
-- _bang_ triggers output.<br>
+- _fCF_ followed by a list of MIDI note values: the "Cantus Firmus".<br>
+- _fGLOS_ followed by a list of MIDI note values: the melodic sequence to be used as an ornamentation reservoir.<br>
+- _bang_: triggers output.<br>
 - _CFdur_ _integer_: Length of CF notes, for score viewing purposes (ms, default 4000).<br>
 - _GLOSdur_ _integer_: Length of each generated note (ms, default 125).<br>
 - _GLOStab_ _integer_: Length of each tab if exceds the number of voices available (ms, default 2000).<br>
