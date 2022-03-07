@@ -9,9 +9,10 @@ a.sousadias@belasartes.ulisboa.pt
 Given as inputs<br>
 - a melodic sequence as a _Cantus Firmus_ (CF) and<br>
 - a _melodic sequence_ (MS) as an ornamentation reservoir,<br>
-this patch, for each two notes of the CF, finds all excerpts belonging to MS whose extreme notes form the same interval.<br>
-This technique lies somewhere between the glosa technique (Ortiz 1553) and the "Gel" technique used by composer Michael Jarrell (Szendzy 1992).
-The resulting data is feed into a Bach.roll object for later use with a score editor.
+
+This patch, for each two notes of the CF, finds all excerpts belonging to MS whose extreme notes form the same interval.<br>
+This technique lies somewhere between the _glosa_ technique (Ortiz 1553) and the _Gel_ technique used by composer Michael Jarrell (Szendzy 1992).<br>
+The resulting data is feed into a Bach.roll object for later use with a score editor.<br>
 
 ### Input:
 The js object accepts the following input messages:
@@ -29,8 +30,8 @@ The js object accepts the following input messages:
 - remove_dups 0/1: Removes duplicated ornamentation sequence generated for each of the CF notes.<br>
 
 ### Output:
-- Instructions for a Bach.roll object.
-Note: connect output to a route object to retrieve data: [route toBachRoll]->[Bach.roll]
+- Instructions for a Bach.roll object.<br>
+Note: connect output to a route object to retrieve data: [route toBachRoll]->[Bach.roll]<br>
 
 ## Remarks
 The current folder contains:<br>
@@ -39,9 +40,9 @@ The current folder contains:<br>
 - README.md - this read me file.<br>
 
 ## References
-Ortiz, D. (1553). Trattado de Glosas. https://imslp.org/wiki/Trattado_de_Glosas_(Ortiz%2C_Diego)<br>
-Sousa Dias, A. (2008) Two examples of free transposition of audio processing techniques to the note domain in “Dói-me o luar” and Ressonâncias – Memórias. C. Agon, G. Assayag, J. Bresson (org.), _The OM Composer´s Book 2_, Paris, IRCAM / Delatour. ISBN: 2-84426-399-2. http://recherche.ircam.fr/equipes/repmus/OMBook/<br>
-Szendy, P. (1992). “Congruences”, in Michael Jarrel, IRCAM-Centre Pompidou, Paris.<br>
+- Ortiz, D. (1553). Trattado de Glosas. https://imslp.org/wiki/Trattado_de_Glosas_(Ortiz%2C_Diego)<br>
+- Sousa Dias, A. (2008) Two examples of free transposition of audio processing techniques to the note domain in “Dói-me o luar” and Ressonâncias – Memórias. C. Agon, G. Assayag, J. Bresson (org.), _The OM Composer´s Book 2_, Paris, IRCAM / Delatour. ISBN: 2-84426-399-2. http://recherche.ircam.fr/equipes/repmus/OMBook/<br>
+- Szendy, P. (1992). “Congruences”, in Michael Jarrel, IRCAM-Centre Pompidou, Paris.<br>
 
 ## Revision history:
 - 2022, March; release of Max version.
@@ -51,7 +52,7 @@ Szendy, P. (1992). “Congruences”, in Michael Jarrel, IRCAM-Centre Pompidou, 
 
 
 ### Disclaimer:
-These patches are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+These patches are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.<br>
 
 
 
