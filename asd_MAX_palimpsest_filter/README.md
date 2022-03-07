@@ -17,7 +17,8 @@ The Time Adjust parameter also affects operation mode. Scale factor = 0, no chan
 - Send the message bandpass with parameters to process data.
 - See contents of each slot with message "info n", where n is an integer
 
-### Inputs:
+### Input:
+The js object accepts the following input messages:
 - rollGen n (contents of a Bach.portal - @out t - roll object); n is an integer refering to a slot where data will be stored
 example:
 	rollGen 0 [ [ 174.285721 [ 6800. 241. 100 0 ] 0 ] [ 320. [ 7100. 241. 100 0 ] 2 ] [ 602.857117 [ 6600. 241. 100 0 ] [ 7600. 241. 100 0 ] 0 ] 0 ] [ [ 515. [ 4800. 1137. 100 0 ] 0 ] 0 ] 
@@ -42,7 +43,7 @@ where
   	  	- 1-The two input sequences are adjusted to the same time length and result will have slot1 time length;
  	   	- 2 (or else) - The same as above, but the result will have slot2 time length.
 	
-### Outputs:
+### Output:
 - Instructions for a Bach.roll object.
 Note: connect output to a route object to retrieve data: [route toBachRoll]->[Bach.roll]
 
@@ -50,7 +51,7 @@ Note: connect output to a route object to retrieve data: [route toBachRoll]->[Ba
 The current folder consists of:<br>
 - asd_palimpsesto-flt.maxpat - the main patch.<br>
 - asd_palimpsesto-flt.js - the js file containing the core processing.<br>
-- palimpsesto-flt-help_ALL.omp - same as "palimpsesto-flt-help.omp" but self-contained, i.e. it contains the patch "palimpsesto-flt.omp" as an abstraction.<br>
+- README.md - this read me file.<br>
 
 ## References
 For operating details see:<br>
