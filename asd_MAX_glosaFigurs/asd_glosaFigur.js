@@ -7,10 +7,19 @@
 // 		a.sousadias@belasartes.ulisboa.pt
 //
 // =============================================================
-//	notes:
-//		- This patch manages segment generation
-//		- 
-//		- 
+/*
+Given as inputs<br>
+- a melodic sequence as a _Cantus Firmus_ (CF) and
+- a _melodic sequence_ (MS) as an ornamentation reservoir,<br>
+This patch, for each two notes of the CF, computes all excerpts belonging to MS whose extreme notes form the same interval.
+This technique lies somewhere between the _glosa_ technique (Ortiz 1553) and the _Gel_ technique used by composer Michael Jarrell (Szendzy 1992).
+The resulting data is feed into a Bach.roll object for later use with a score editor.
+
+References
+- Ortiz, D. (1553). Trattado de Glosas. https://imslp.org/wiki/Trattado_de_Glosas_(Ortiz%2C_Diego)
+- Sousa Dias, A. (2008) Two examples of free transposition of audio processing techniques to the note domain in “Dói-me o luar” and Ressonâncias – Memórias. C. Agon, G. Assayag, J. Bresson (org.), _The OM Composer´s Book 2_, Paris, IRCAM / Delatour. ISBN: 2-84426-399-2. http://recherche.ircam.fr/equipes/repmus/OMBook/
+- Szendy, P. (1992). “Congruences”, in Michael Jarrel, IRCAM-Centre Pompidou, Paris.
+*/
 // =============================================================
 //                inlets and outlets 
 // =============================================================
@@ -50,13 +59,13 @@ var dups_remove = true;
 //                Functions start here 
 // =============================================================
 function bang(){
-	if(listCF) {  } else {post("asd_GlosaFig ERROR: list CF not defined\n");};
-	if(listGLOS) {  } else {post("asd_GlosaFig ERROR: list GLOS not defined\n");};
 	
+	outlet(0, "toBachRoll", "clear" );
 	if(listGLOS && listCF) {
 		studyIntervals();
 	} else {
-		post("asd_GlosaFig ERROR: lists are not defined\n")
+		if(listCF) {  } else {post("asd_GlosaFig ERROR: list CF not defined\n");};
+		if(listGLOS) {  } else {post("asd_GlosaFig ERROR: list GLOS not defined\n");};		
 	}
 	
 }
@@ -184,7 +193,7 @@ function setGLSdx(){
 			var cindex = (i + j) % listGLOS.length;
 			
 			listGLOSdx[ i ][ j ] = listGLOS[ cindex ]-listGLOS[ i ];
-			post("\nGLdx", i, j, cindex, " interv de ", listGLOS[ i ], " a ",listGLOS[ cindex ]," : ",listGLOSdx[ i ][ j ]);
+			// post("\nGLdx", i, j, cindex, " interv de ", listGLOS[ i ], " a ",listGLOS[ cindex ]," : ",listGLOSdx[ i ][ j ]);
 			
 		}
 		// intervalos em relação à primeira nota
