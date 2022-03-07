@@ -19,15 +19,15 @@ The Time Adjust parameter also affects operation mode. Scale factor = 0, no chan
 
 ### Input:
 The js object accepts the following input messages:
-- rollGen n (contents of a Bach.portal - @out t - roll object); n is an integer refering to a slot where data will be stored
-example:
-	rollGen 0 [ [ 174.285721 [ 6800. 241. 100 0 ] 0 ] [ 320. [ 7100. 241. 100 0 ] 2 ] [ 602.857117 [ 6600. 241. 100 0 ] [ 7600. 241. 100 0 ] 0 ] 0 ] [ [ 515. [ 4800. 1137. 100 0 ] 0 ] 0 ] 
+- _rollGen_ _n_ (contents of a Bach.portal - @out t - roll object); n is an integer refering to a slot where data will be stored<br>
+example:<br>
+	rollGen 0 [ [ 174.285721 [ 6800. 241. 100 0 ] 0 ] [ 320. [ 7100. 241. 100 0 ] 2 ] [ 602.857117 [ 6600. 241. 100 0 ] [ 7600. 241. 100 0 ] 0 ] 0 ] [ [ 515. [ 4800. 1137. 100 0 ] 0 ] 0 ] <br>
 
-- info n
-example:
-	info 0
+- _info_ _n_<br>
+example:<br>
+	info 0<br>
 
-- bandpass slot1 slot2 slot3 method timeAdjust
+- _bandpass_ slot1 slot2 slot3 method timeAdjust
 where
 	- slot1: number of slot where chord-seq 1 that will be used as filter/modulator is stored.
 	- slot2: number of slot where chord-seq 2 that will be used as source is stored.
@@ -44,7 +44,7 @@ where
  	   	- 2 (or else) - The same as above, but the result will have slot2 time length.
 	
 ### Output:
-- Instructions for a Bach.roll object.
+- Instructions for a _Bach.roll_ object.
 Note: connect output to a route object to retrieve data: [route toBachRoll]->[Bach.roll]
 
 ## Remarks
@@ -55,7 +55,7 @@ The current folder consists of:<br>
 
 ## References
 For operating details see:<br>
-Sousa Dias, A. (2008) Two examples of free transposition of audio processing techniques to the note domain in “Dói-me o luar” and Ressonâncias – Memórias. C. Agon, G. Assayag, J. Bresson (org.), _The OM Composer´s Book 2_, Paris, IRCAM / Delatour. ISBN: 2-84426-399-2. http://recherche.ircam.fr/equipes/repmus/OMBook/
+Sousa Dias, A. (2008) Two examples of free transposition of audio processing techniques to the note domain in “Dói-me o luar” and Ressonâncias – Memórias. C. Agon, G. Assayag, J. Bresson (org.), _The OM Composer´s Book 2_, Paris, IRCAM / Delatour. ISBN: 2-84426-399-2. http://recherche.ircam.fr/equipes/repmus/OMBook/<br>
 
 
 ## Revision history:

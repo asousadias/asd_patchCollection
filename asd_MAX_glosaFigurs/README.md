@@ -10,7 +10,7 @@ Given as inputs<br>
 - a melodic sequence as a _Cantus Firmus_ (CF) and<br>
 - a _melodic sequence_ (MS) as an ornamentation reservoir,<br>
 
-This patch, for each two notes of the CF, finds all excerpts belonging to MS whose extreme notes form the same interval.<br>
+This patch, for each two notes of the CF, computes all excerpts belonging to MS whose extreme notes form the same interval.<br>
 This technique lies somewhere between the _glosa_ technique (Ortiz 1553) and the _Gel_ technique used by composer Michael Jarrell (Szendzy 1992).<br>
 The resulting data is feed into a Bach.roll object for later use with a score editor.<br>
 
