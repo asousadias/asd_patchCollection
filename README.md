@@ -12,14 +12,20 @@ Enjoy!<br/>
 NOTE: this is a working in progress, continuous update.<br>
 
 ## Patch List
+- asd_MAX_glosaFigurs - ornamentation generator crossing the Ortiz' _glosas_ (1553) and Jarrel's _Gel_ (1992)
+- asd_MAX_palimpsest_filter - a "bandpass/morpher" patch.
 - asdDecorrelation - Temporal micro-decorrelation, based upon Horacio Vaggione's ideas.
 - asdSyntaxParser - Splits a multicommand line in single line commands according to a defined grammar.
 
 ## References
-Sousa Dias, A. (2005). _L´Objet Sonore: Situation, Évaluation et Potentialités. Un paradigme pour la création d´outils de composition musicale._ Université Paris 8.<br>
+- Ortiz, D. (1553). _Trattado de Glosas_. https://imslp.org/wiki/Trattado_de_Glosas_(Ortiz%2C_Diego)<br>
+- Sousa Dias, A. (2005). _L´Objet Sonore: Situation, Évaluation et Potentialités. Un paradigme pour la création d´outils de composition musicale._ Université Paris 8.<br>
+- Szendy, P. (1992). “Congruences”. _Michael Jarrel_, IRCAM-Centre Pompidou, Paris.<br>
+- Vaggione, H. (2002). Décorrélation microtemporelle, morphologies et figurations spatiales. _Actes des neuvièmes Journées d’Informatique Musicale_. Marseille, ADERIM-GMEM. http://jim.afim-asso.org/jim2002/articles/L27_Vaggione.pdf.<br>
 
 
 ## Revision history
+- 2022, March: Added "asd\_MAX\_glosaFigurs" and "asd\_MAX\_palimpsest_filter"
 - 2018, December 29: Initial release on GitHub.
 - 2005, November: Constitution of a general repertoire for my doctoral thesis.
 
@@ -33,5 +39,3 @@ Universidade de Lisboa, Faculdade de Belas-Artes<br>
 Largo da Academia Nacional de Belas-Artes<br>
 1249-058 Lisboa, Portugal<br>
 http://www.belasartes.ulisboa.pt/
-
-www.sousadias.com
