@@ -3,7 +3,7 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
+			"minor" : 2,
 			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-6",
@@ -78,13 +79,13 @@
 					"presentation_rect" : [ 333.0, 105.0, 64.0, 184.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Output",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
-							"parameter_mmin" : -70.0,
+							"parameter_initial" : [ 0.0 ],
 							"parameter_longname" : "Output",
 							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ]
+							"parameter_mmin" : -70.0,
+							"parameter_shortname" : "Output",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -103,9 +104,10 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 327.0, 7.0, 147.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 327.0, 7.0, 147.0, 21.0 ],
+					"presentation_rect" : [ 327.0, 7.0, 155.0, 21.0 ],
 					"text" : "António de Sousa Dias",
 					"textcolor" : [ 0.200000002980232, 0.200000002980232, 0.200000002980232, 1.0 ],
+					"textjustification" : 2,
 					"varname" : "autohelp_top_digest[1]"
 				}
 
@@ -113,15 +115,17 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 12.0,
+					"fontsize" : 10.0,
 					"id" : "obj-11",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 357.0, 29.0, 119.0, 20.0 ],
+					"patching_rect" : [ 357.0, 29.0, 125.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 357.0, 29.0, 119.0, 20.0 ],
-					"text" : "www.sousadias.com"
+					"presentation_rect" : [ 318.0, 29.0, 164.0, 18.0 ],
+					"text" : "a.sousadias@belasartes.ulisboa.pt",
+					"textjustification" : 2
 				}
 
 			}
@@ -256,7 +260,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 7.0, 33.0, 341.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 33.0, 341.0, 18.0 ],
+					"presentation_rect" : [ 7.0, 33.0, 301.0, 18.0 ],
 					"text" : "Patch to observe the perceptive effects of temporal de-correlation."
 				}
 
@@ -634,26 +638,27 @@
 			"parameterbanks" : 			{
 
 			}
-
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "pan2X.maxpat",
-				"bootpath" : "~/Documents/Documents1/-Projets/_github_repositories/asd_compositionGEN/over asdDecorrelation/asdDecorrelation",
+				"name" : "asd.decorrelation.maxpat",
+				"bootpath" : "~/Documents/GitHub/asd_patchCollection/asdDecorrelation",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "asd.decorrelation.maxpat",
-				"bootpath" : "~/Documents/Documents1/-Projets/_github_repositories/asd_compositionGEN/over asdDecorrelation/asdDecorrelation",
+				"name" : "pan2X.maxpat",
+				"bootpath" : "~/Documents/GitHub/asd_patchCollection/asdDecorrelation",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "source.maxpat",
-				"bootpath" : "~/Documents/Documents1/-Projets/_github_repositories/asd_compositionGEN/over asdDecorrelation/asdDecorrelation",
+				"bootpath" : "~/Documents/GitHub/asd_patchCollection/asdDecorrelation",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
