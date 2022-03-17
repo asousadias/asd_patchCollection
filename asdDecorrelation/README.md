@@ -14,7 +14,7 @@ In the figure below, to simulate a perceptual effect of source location at left,
 ![Decorrelation Example](asd_decorrelation01.png)<br/>
 
 ## Operation Mode
-Setup is straightforward. Use the _asd.decorrelation.maxhelp_ patch to test and play around.<br>
+No particular setup is required: the _asd.decorrelation.maxpat_ can be integrated in any patch.<br/>It is recommended to use the _asd.decorrelation.maxhelp_ patch to test and play around.<br>
 Enjoy.
 
 ## Patch List
