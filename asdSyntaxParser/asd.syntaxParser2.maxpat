@@ -3,7 +3,7 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
+			"minor" : 2,
 			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
@@ -37,7 +37,42 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.754705,
+					"id" : "obj-54",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 367.5, 6.0, 147.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 359.5, 22.0, 138.0, 21.0 ],
+					"text" : "António de Sousa Dias",
+					"textcolor" : [ 0.200000002980232, 0.200000002980232, 0.200000002980232, 1.0 ],
+					"textjustification" : 2,
+					"varname" : "autohelp_top_digest[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-1",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 352.0, 24.0, 164.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 333.5, 40.0, 164.0, 18.0 ],
+					"text" : "a.sousadias@belasartes.ulisboa.pt",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
@@ -157,7 +192,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 148.0, 368.0, 284.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Example: loop, 1;\rmeans keyword \"loop\" followed by 1 parameter."
 				}
 
@@ -174,7 +208,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 99.0, 301.0, 108.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0
+						"embed" : 0,
+						"precision" : 6
 					}
 ,
 					"text" : "coll #1"
@@ -246,38 +281,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 148.0, 329.0, 126.0, 20.0 ],
 					"text" : "Command syntax:"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.754705,
-					"id" : "obj-54",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 329.0, 9.0, 147.0, 21.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 342.0, 22.0, 147.0, 21.0 ],
-					"text" : "António de Sousa Dias",
-					"textcolor" : [ 0.200000002980232, 0.200000002980232, 0.200000002980232, 1.0 ],
-					"varname" : "autohelp_top_digest[1]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-29",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 359.0, 31.0, 119.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 372.0, 44.0, 119.0, 20.0 ],
-					"text" : "www.sousadias.com"
 				}
 
 			}
@@ -434,7 +437,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 7.0, 5.0, 469.0, 63.0 ],
+					"patching_rect" : [ 7.0, 5.0, 509.0, 72.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 20.0, 18.0, 469.0, 63.0 ],
 					"proportion" : 0.39,

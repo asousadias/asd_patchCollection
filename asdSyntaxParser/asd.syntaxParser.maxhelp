@@ -3,7 +3,7 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
+			"minor" : 2,
 			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-47",
@@ -88,7 +89,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 632.0, 383.0, 139.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 733.0, 393.0, 341.0, 18.0 ],
+					"presentation_rect" : [ 629.0, 381.0, 139.0, 18.0 ],
 					"text" : "Argument: <syntax filename>"
 				}
 
@@ -267,7 +268,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 213.0, 383.0, 139.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 177.0, 458.0, 341.0, 18.0 ],
+					"presentation_rect" : [ 209.0, 385.0, 139.0, 18.0 ],
 					"text" : "Argument: <syntax filename>"
 				}
 
@@ -308,11 +309,12 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 327.0, 7.0, 147.0, 21.0 ],
+					"patching_rect" : [ 381.0, 7.0, 147.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 327.0, 7.0, 147.0, 21.0 ],
+					"presentation_rect" : [ 499.5, 17.0, 138.0, 21.0 ],
 					"text" : "António de Sousa Dias",
 					"textcolor" : [ 0.200000002980232, 0.200000002980232, 0.200000002980232, 1.0 ],
+					"textjustification" : 2,
 					"varname" : "autohelp_top_digest[1]"
 				}
 
@@ -320,15 +322,16 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 12.0,
+					"fontsize" : 10.0,
 					"id" : "obj-24",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 357.0, 29.0, 119.0, 20.0 ],
+					"patching_rect" : [ 365.5, 25.0, 164.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 357.0, 29.0, 119.0, 20.0 ],
-					"text" : "www.sousadias.com"
+					"presentation_rect" : [ 473.5, 35.0, 164.0, 18.0 ],
+					"text" : "a.sousadias@belasartes.ulisboa.pt",
+					"textjustification" : 2
 				}
 
 			}
@@ -393,7 +396,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 387.5, 252.0, 120.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1
+						"embed" : 1,
+						"precision" : 6
 					}
 ,
 					"text" : "coll An-Example",
@@ -510,7 +514,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 693.0, 122.0, 164.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1
+						"embed" : 1,
+						"precision" : 6
 					}
 ,
 					"text" : "coll An-Example @embed 1",
@@ -687,9 +692,9 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 3.0, 469.0, 63.0 ],
+					"patching_rect" : [ 5.0, 3.0, 523.0, 62.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 3.0, 469.0, 63.0 ],
+					"presentation_rect" : [ 5.0, 3.0, 632.5, 63.0 ],
 					"proportion" : 0.39,
 					"varname" : "autohelp_top_panel"
 				}
@@ -838,17 +843,17 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "asd.syntaxParser1.maxpat",
-				"bootpath" : "~/Documents/GitHub/asd_patchCollection/asdSyntaxParser",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "SYNTAX.txt",
 				"bootpath" : "~/Documents/GitHub/asd_patchCollection/asdSyntaxParser",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "asd.syntaxParser1.maxpat",
+				"bootpath" : "~/Documents/GitHub/asd_patchCollection/asdSyntaxParser",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{

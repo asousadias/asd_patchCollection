@@ -3,7 +3,7 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
+			"minor" : 2,
 			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
@@ -37,35 +37,38 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.754705,
-					"id" : "obj-54",
+					"id" : "obj-14",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 327.0, 7.0, 147.0, 21.0 ],
+					"patching_rect" : [ 381.0, 7.0, 147.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 327.0, 7.0, 147.0, 21.0 ],
+					"presentation_rect" : [ 376.5, 10.0, 138.0, 21.0 ],
 					"text" : "António de Sousa Dias",
 					"textcolor" : [ 0.200000002980232, 0.200000002980232, 0.200000002980232, 1.0 ],
-					"varname" : "autohelp_top_digest[1]"
+					"textjustification" : 2,
+					"varname" : "autohelp_top_digest[2]"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-24",
+					"fontsize" : 10.0,
+					"id" : "obj-18",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 357.0, 29.0, 119.0, 20.0 ],
+					"patching_rect" : [ 365.5, 25.0, 164.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 357.0, 29.0, 119.0, 20.0 ],
-					"text" : "www.sousadias.com"
+					"presentation_rect" : [ 350.5, 28.0, 164.0, 18.0 ],
+					"text" : "a.sousadias@belasartes.ulisboa.pt",
+					"textjustification" : 2
 				}
 
 			}
@@ -110,6 +113,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 55.0, 171.0, 35.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 55.0, 171.0, 35.0, 22.0 ],
 					"text" : "b 1"
 				}
 
@@ -124,6 +129,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 55.0, 199.0, 42.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 55.0, 199.0, 42.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -140,6 +147,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "int" ],
 					"patching_rect" : [ 55.0, 231.0, 132.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 55.0, 231.0, 132.0, 22.0 ],
 					"text" : "Text asdSPhelp.txt"
 				}
 
@@ -153,7 +162,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 350.0, 86.0, 28.0, 28.0 ]
+					"patching_rect" : [ 350.0, 86.0, 28.0, 28.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 350.0, 86.0, 28.0, 28.0 ]
 				}
 
 			}
@@ -167,6 +178,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 13.0, 126.0, 228.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 13.0, 126.0, 228.0, 22.0 ],
 					"text" : "route verbose help"
 				}
 
@@ -183,7 +196,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
+							"minor" : 2,
 							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -217,6 +230,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-22",
@@ -486,7 +500,8 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 185.0, 409.0, 201.0, 22.0 ],
 									"saved_object_attributes" : 									{
-										"embed" : 0
+										"embed" : 0,
+										"precision" : 6
 									}
 ,
 									"text" : "coll"
@@ -673,6 +688,8 @@
 					}
 ,
 					"patching_rect" : [ 13.0, 416.0, 117.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 13.0, 416.0, 117.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -693,7 +710,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.0, 86.0, 28.0, 28.0 ]
+					"patching_rect" : [ 13.0, 86.0, 28.0, 28.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 13.0, 86.0, 28.0, 28.0 ]
 				}
 
 			}
@@ -707,6 +726,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 302.0, 315.0, 40.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 302.0, 315.0, 40.0, 22.0 ],
 					"text" : "+ 1"
 				}
 
@@ -721,6 +742,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 418.0, 326.0, 284.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 418.0, 326.0, 284.0, 33.0 ],
 					"text" : "Example: loop, 1;\rmeans keyword \"loop\" followed by 1 parameter."
 				}
 
@@ -736,8 +760,11 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 302.0, 286.0, 108.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 302.0, 286.0, 108.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0
+						"embed" : 0,
+						"precision" : 6
 					}
 ,
 					"text" : "coll #1"
@@ -753,6 +780,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 253.0, 464.0, 103.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 253.0, 464.0, 103.0, 20.0 ],
 					"text" : "Send Command"
 				}
 
@@ -766,6 +795,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 418.0, 304.0, 266.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 418.0, 304.0, 266.0, 20.0 ],
 					"text" : "<Keyword>, <number of arguments>;"
 				}
 
@@ -780,7 +811,9 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 222.0, 459.0, 28.0, 28.0 ]
+					"patching_rect" : [ 222.0, 459.0, 28.0, 28.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 222.0, 459.0, 28.0, 28.0 ]
 				}
 
 			}
@@ -794,6 +827,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 222.0, 362.0, 68.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 222.0, 362.0, 68.0, 22.0 ],
 					"text" : "zl group"
 				}
 
@@ -808,6 +843,8 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "float" ],
 					"patching_rect" : [ 302.0, 250.0, 78.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 302.0, 250.0, 78.0, 22.0 ],
 					"text" : "t s i l f"
 				}
 
@@ -822,6 +859,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 222.0, 209.0, 68.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 222.0, 209.0, 68.0, 22.0 ],
 					"text" : "iter"
 				}
 
@@ -850,8 +889,11 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 222.0, 158.0, 284.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 222.0, 158.0, 284.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1
+						"embed" : 1,
+						"precision" : 6
 					}
 ,
 					"text" : "coll"
@@ -867,6 +909,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 418.0, 287.0, 126.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 418.0, 287.0, 126.0, 20.0 ],
 					"text" : "Command syntax:"
 				}
 
@@ -880,6 +924,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 55.0, 255.0, 176.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 55.0, 255.0, 176.0, 20.0 ],
 					"text" : "See inside for instructions"
 				}
 
@@ -895,7 +941,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 3.0, 469.0, 63.0 ],
+					"patching_rect" : [ 5.0, 3.0, 524.0, 75.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.0, 3.0, 469.0, 63.0 ],
 					"proportion" : 0.39,
