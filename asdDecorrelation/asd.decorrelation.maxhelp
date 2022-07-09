@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -60,8 +60,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 5.0, 393.0, 128.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 299.0, 75.0, 162.0, 22.0 ],
-					"text" : "3. Output balance"
+					"presentation_rect" : [ 333.0, 75.0, 75.0, 22.0 ],
+					"text" : "3. Output "
 				}
 
 			}
@@ -194,14 +194,14 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 9.0,
+					"fontsize" : 12.0,
 					"id" : "obj-5",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 191.0, 309.0, 66.0, 17.0 ],
+					"patching_rect" : [ 191.0, 309.0, 85.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 104.0, 291.0, 63.0, 17.0 ],
+					"presentation_rect" : [ 173.0, 300.0, 81.0, 20.0 ],
 					"text" : "Filter effect"
 				}
 
@@ -268,16 +268,16 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 9.0,
+					"fontsize" : 12.0,
 					"id" : "obj-15",
 					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 306.0, 322.0, 81.0, 47.0 ],
+					"patching_rect" : [ 306.0, 322.0, 92.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 173.0, 248.0, 102.0, 37.0 ],
+					"presentation_rect" : [ 173.0, 248.0, 155.0, 47.0 ],
 					"text" : "Source located at rigth side, de-correlation on the left side"
 				}
 
@@ -333,15 +333,15 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 9.0,
+					"fontsize" : 12.0,
 					"id" : "obj-22",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 276.0, 322.0, 29.0, 19.0 ],
+					"patching_rect" : [ 276.0, 322.0, 36.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 189.0, 304.0, 26.0, 19.0 ],
+					"presentation_rect" : [ 296.0, 300.0, 32.0, 22.0 ],
 					"text" : "127"
 				}
 
@@ -349,15 +349,15 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 9.0,
+					"fontsize" : 12.0,
 					"id" : "obj-23",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 210.0, 322.0, 23.0, 19.0 ],
+					"patching_rect" : [ 210.0, 322.0, 27.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 123.0, 304.0, 20.0, 19.0 ],
+					"presentation_rect" : [ 147.0, 300.0, 24.0, 22.0 ],
 					"text" : "64"
 				}
 
@@ -365,15 +365,15 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 9.0,
+					"fontsize" : 12.0,
 					"id" : "obj-24",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 140.0, 322.0, 27.0, 19.0 ],
+					"patching_rect" : [ 140.0, 322.0, 31.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 53.0, 304.0, 24.0, 19.0 ],
+					"presentation_rect" : [ 12.5, 300.0, 27.0, 22.0 ],
 					"text" : "0"
 				}
 
@@ -391,7 +391,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 140.0, 343.0, 165.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 53.0, 325.0, 162.0, 26.0 ]
+					"presentation_rect" : [ 12.5, 326.0, 315.5, 26.0 ]
 				}
 
 			}
@@ -455,16 +455,16 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 9.0,
+					"fontsize" : 12.0,
 					"id" : "obj-43",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 37.0, 327.0, 100.0, 37.0 ],
+					"patching_rect" : [ 37.0, 327.0, 125.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 12.5, 248.0, 107.0, 37.0 ],
+					"presentation_rect" : [ 12.5, 248.0, 155.0, 47.0 ],
 					"text" : "Source located at left side, de-correlation on the rigth side"
 				}
 
