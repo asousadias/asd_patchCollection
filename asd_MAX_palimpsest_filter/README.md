@@ -30,17 +30,17 @@ example:<br>
 -- 2- Scale input B to time length A.
 -- 3-Same as 1 (scale input A to time length B), but takes last onsets as references for scaling factor.
 -- 4-Same as 2 (scale input B to time length A), but takes last onsets as references for scaling factor.
-
 - _setMethodGate n_  - GATE Method (integer):<br>
 --0-Continuous pass -  adjusts note onsets and offsets inputs (slot A) to modulator events (slot B).
 --0-Attack only pass -   passes only notes that have an attack inside modulator events time span.
-
 - _setMethodPitch n_   - PITCH Method (integer):<br>
 -- 0-Bypass - Passes all notes unchanged after de gate pass.
 -- 1-Band pass -Keeps only the gated notes from A that are equal to the notes of B.
 -- 2-Band pass Pc -Keeps only the gated notes from A that have the same pitch class as the notes of B.
 -- 3-Band pass adjust -“Rounds” all notes from A to the nearest notes of B.
 -- 4-Band pass adjust Pc -“Rounds” all notes from A to the nearest Pc note of B.
+- _sendToRoll n_ - Send contens of slots A, B, OUT, A1 or B1 to _Bach.roll_ object.
+- _infoPrint n_ - Send contens of slots A, B, OUT, A1 or B1 to the Max Console.
 
 ### Output:
 - Instructions for a _Bach.roll_ object.
@@ -51,7 +51,7 @@ The current folder consists of:<br>
 - asd_palimpsesto-flt.maxpat - the main patch.<br>
 - asd_palimpsesto-flt.js - the js file containing the core processing.<br>
 - README.md - this read me file.<br>
-- _asdPalimp\_A0.mid_ and _asdPalimp\_A0.mid_ - two MIDI files for testing.<br>
+- _asdPalimp\_A0.mid_ and _asdPalimp\_B0.mid_ - two MIDI files for testing.<br>
 
 ## References
 For operating details see:<br>
@@ -59,7 +59,7 @@ Sousa Dias, A. (2008) Two examples of free transposition of audio processing tec
 
 
 ## Revision history:
-- 2024, March (Max version): major revision, code fully revised. Pitch processing splited into two processes: gate and "spectral/pitch" adjustment"; added experimental time adjustment through last onset comparision.
+- 2024, March (Max version): major revision. Code fully revised. Pitch processing splited into two processes: gate and "spectral/pitch" adjustment"; added experimental time adjustment through last onset comparision.
 - 2022, March; release of Max version. Requires the Bach library.
 - 2018, May (OM version): Release on GitHub<br>
 - 2010, Jan 12 (OM version): Minor correction to adjust select values on select object<br>
