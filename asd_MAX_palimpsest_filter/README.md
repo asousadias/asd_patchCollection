@@ -4,7 +4,7 @@ Design and programming<br>
 Antonio de SOUSA DIAS<br>
 a.sousadias@belasartes.ulisboa.pt
 
-Latest release: [asd_MAX_palimpsest_filter_2022_03_24](https://github.com/asousadias/asd_patchCollection/blob/master/asd_MAX_palimpsest_filter/releases/asd_MAX_palimpsest_filter_2022_03_24.zip)
+Latest release: [asd_MAX_palimpsest_filter_2022_03_24](https://github.com/asousadias/asd_patchCollection/blob/master/asd_MAX_palimpsest_filter/releases/asd_MAX_palimpsest_filter_2022_03_24.zip){:target="_blank"}
 
 ## Description:
 The “palimpsesto flt” is a Max patch, originally programmed in 2002 in OpenMusic, that transposes to the note domain the operations of filtering and morphing that we find in the audio domain.<br>
