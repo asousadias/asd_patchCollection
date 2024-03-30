@@ -7,51 +7,51 @@ a.sousadias@belasartes.ulisboa.pt
 ## Description:
 The “palimpsesto flt” is a Max patch, originally programmed in 2002 in OpenMusic, that transposes to the note domain the operations of filtering and morphing that we find in the audio domain.<br>
 Its operating mode is anchored on the idea of palimpsest, and can be described as follows:  given two input sequences in Bach.roll format (a source file and a modulator file), it produces a third Bach.roll sequence "filtering" the input 2 with input 1.<br>
-Method 0, keeps all notes from input 2, as long as they fall in the time intervals of input 1. All the other methos add more conditions to this one. Method 1 keeps only the notes from the source file that are equal to the notes of the modulation file, while, in a slight variant possibility, method 2 keeps those notes having the same pitch class. It is thus a resulting hybridization between spectral multiplication and the use of comb filters.<br>
-Method 3, “rounds” all notes from the source file to the nearest notes of the modulation file, and method 4, in a slight variant possibility, rounds them to the near modulation pitch class.
-The Time Adjust parameter also affects operation mode. Scale factor = 0, no change; scale factor =  1, scale time input 2 to itime length 1; scale factor =  2, scale input times 1 to time length 2.<br>
-
+Different "Methods" adjust the behaviour of operations and result: (1) Time Adjust options adjust file lengths; (2) Gate options parameter control how input notes are kept; (3) Pitch options parameter controls how input notes are kept or transformed. For further information see Operation mode section, bellow.<br>
 
 ## Operation mode:
-- Feed the js object with two sequences, stored in two slots.
-- Send the message bandpass with parameters to process data.
-- See contents of each slot with message "info n", where n is an integer
+- Feed the js object "asd_palimpsesto-flt.js" with two sequences. For each sequence, set slot (A or B) to store it.
+- Choose options (Time, Gate and Pitch).
+- Bang the js object (text button "Process"). Output is sent a "Bach.roll" object.
+- See contents of each slot (use _sendToRoll n_ message - or use the menu "Send to slot Bach.roll").
+NOTE: Slots A1 and B1 are working slots with time adjustment according to options choosed.
 
 ### Input:
 The js object accepts the following input messages:
-- _rollGen_ _n_ (contents of a Bach.portal - @out t - roll object); n is an integer refering to a slot where data will be stored<br>
+- _rollGen_ _n_ (contents of a _Bach.portal @out t_ roll object); n is an integer refering to a slot (1 or 2) where data will be stored<br>
 example:<br>
-	rollGen 0 [ [ 174.285721 [ 6800. 241. 100 0 ] 0 ] [ 320. [ 7100. 241. 100 0 ] 2 ] [ 602.857117 [ 6600. 241. 100 0 ] [ 7600. 241. 100 0 ] 0 ] 0 ] [ [ 515. [ 4800. 1137. 100 0 ] 0 ] 0 ] <br>
+	rollGen 1 [ [ 174.285721 [ 6800. 241. 100 0 ] 0 ] [ 320. [ 7100. 241. 100 0 ] 2 ] [ 602.857117 [ 6600. 241. 100 0 ] [ 7600. 241. 100 0 ] 0 ] 0 ] [ [ 515. [ 4800. 1137. 100 0 ] 0 ] 0 ] <br>
 
-- _info_ _n_<br>
-example:<br>
-	info 0<br>
+- _bang_ - Start process. Compute output.
 
-- _bandpass_ slot1 slot2 slot3 method timeAdjust
-where
-	- slot1: number of slot where chord-seq 1 that will be used as filter/modulator is stored.
-	- slot2: number of slot where chord-seq 2 that will be used as source is stored.
-	- slot3: number of slot where the output will be stored.
-	- Method (integer):<br>
- 	 	- 0-Band pass all notes of input 2 according to onsets of input 1;
- 	   	- 1-Band pass note;
-		- 2-Band pass pitch class;
-		- 3-Set each event of input 2 to corresponding note of input 1;
-		- 4-Set each event of input 2 to nearest pitch of the pitch class note of input 1.
-	- Time adjust (integer):
-		- 0-No change. Slots will be considered and compared according to their original events onset;
-  	  	- 1-The two input sequences are adjusted to the same time length and result will have slot1 time length;
- 	   	- 2 (or else) - The same as above, but the result will have slot2 time length.
-	
+- _setTimeAdjustment n_   - Time adjust (integer):<br>
+-- 0-No time change. Working slots will have same length as their original slots;
+-- 1-Scale input A to time length B (time adjustment takes biggest offsets).
+-- 2- Scale input B to time length A.
+-- 3-Same as 1 (scale input A to time length B), but takes last onsets as references for scaling factor.
+-- 4-Same as 2 (scale input B to time length A), but takes last onsets as references for scaling factor.
+
+- _setMethodGate n_  - GATE Method (integer):<br>
+--0-Continuous pass -  adjusts note onsets and offsets inputs (slot A) to modulator events (slot B).
+--0-Attack only pass -   passes only notes that have an attack inside modulator events time span.
+
+- _setMethodPitch n_   - PITCH Method (integer):<br>
+-- 0-Bypass - Passes all notes unchanged after de gate pass.
+-- 1-Band pass -Keeps only the gated notes from A that are equal to the notes of B.
+-- 2-Band pass Pc -Keeps only the gated notes from A that have the same pitch class as the notes of B.
+-- 3-Band pass adjust -“Rounds” all notes from A to the nearest notes of B.
+-- 4-Band pass adjust Pc -“Rounds” all notes from A to the nearest Pc note of B.
+
 ### Output:
 - Instructions for a _Bach.roll_ object.
-Note: connect output to a route object to retrieve data: [route toBachRoll]->[Bach.roll]
+Note: connect output to a route object to retrieve data: [route toBachRoll]->[Bach.roll]<br>
 
 ## Remarks
 The current folder consists of:<br>
 - asd_palimpsesto-flt.maxpat - the main patch.<br>
 - asd_palimpsesto-flt.js - the js file containing the core processing.<br>
 - README.md - this read me file.<br>
+- _asdPalimp\_A0.mid_ and _asdPalimp\_A0.mid_ - two MIDI files for testing.<br>
 
 ## References
 For operating details see:<br>
@@ -59,7 +59,8 @@ Sousa Dias, A. (2008) Two examples of free transposition of audio processing tec
 
 
 ## Revision history:
-- 2022, March; release of Max version.
+- 2024, March (Max version): major revision, code fully revised. Pitch processing splited into two processes: gate and "spectral/pitch" adjustment"; added experimental time adjustment through last onset comparision.
+- 2022, March; release of Max version. Requires the Bach library.
 - 2018, May (OM version): Release on GitHub<br>
 - 2010, Jan 12 (OM version): Minor correction to adjust select values on select object<br>
 - 2009, Jan (OM version): Initial release on CICM site. Time Adjust parameter added to adjust the length of the two input chord sequences.<br>
