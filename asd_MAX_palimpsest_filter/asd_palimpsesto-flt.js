@@ -69,6 +69,7 @@ function TableRoll() {
     this.endOnset = -1; // last onset
     this.printRoll = printRoll;
     this.sendRoll2BachRoll = sendRoll2BachRoll;
+    this.sendRoll2BachRollChord = sendRoll2BachRollChord;
     this.deepCopyTable = deepCopyTable;
 }
 // =============================================================
@@ -138,6 +139,26 @@ function sendRoll2BachRoll() {
             tableOUT[ ++tableI ] = "]";
         }
         outlet(0, "toBachRoll", tableOUT);
+    }
+}
+// =============================================================
+function sendRoll2BachRollChord() {
+    outlet(0, "toBachRoll", "clear" );
+    if(this.nVoices > 0) {
+        var iV, iOnset, iPc, iDur, iVel;
+        outlet(0, "toBachRoll", "numvoices", this.nVoices );
+        for( var v=0; v<this.voice.length; v++) {
+            iV = v+1;
+            for( var c=0; c<this.voice[v].chord.length; c++){
+                iOnset = this.voice[v].chord[ c ].onset;
+                for( var n=0; n<this.voice[v].chord[ c ].note.length; n++) {
+                    iPc = this.voice[v].chord[ c ].note[ n ].pc;
+                    iDur = this.voice[v].chord[ c ].note[ n ].dur;
+                    iVel = this.voice[v].chord[ c ].note[ n ].vel;
+                    outlet(0, "toBachRoll", "addchord",iV,"[",iOnset,"[",iPc,iDur,iVel,"]","]" );
+                }
+            }
+        }
     }
 }
 // =============================================================
@@ -483,9 +504,15 @@ function setPalimpMain() {
 // =============================================================
 function rollGen() {
     var aTableBase0 = arrayfromargs(arguments);
+    var aTableLength = aTableBase0.length;
+    if( aTableLength>= 32767 ) {
+        post("Input roll rejected. Length greater or equal than ",aTableLength," elements.\nUse smaller files.\n");
+        return 0;
+    }
     setInputTableNumber = aTableBase0[0];
+
     if( isNaN(setInputTableNumber) ) {
-        post("ERROR: roll destination not known\n");
+        post("ERROR: roll destination not defined\n");
     } else {
         switch( setInputTableNumber ) {
             default:
@@ -518,6 +545,7 @@ function fillTable2( arr , aTableBase ) {
     var iNoteI = -1;
     arr.endOffset = 0;
     arr.endOnset = 0;
+    post("Table length =",aTableBase.length," elements.\n");
     while( i < aTableBase.length ) {
         switch( aTableBase[ i ] ) {
             case "[":
@@ -525,14 +553,14 @@ function fillTable2( arr , aTableBase ) {
                 switch(ilevel){
                     case 1: // Voice
                         ivoiceI++;
-                        //post("\nVoice ",ivoiceI," - ");
+                        post("\nVoice ",ivoiceI," - ");
                         arr.voice[ ivoiceI] = new VoiceEvent();
                         arr.nVoices = ivoiceI+1;
                         iChordI = -1;
                         break;
                     case 2: // Chord
                         iChordI++;
-                        //post("Chord ",iChordI," - ");
+                        // post("Chord ",iChordI," - ");
                         arr.voice[ivoiceI].nChords = iChordI+1;
                         arr.voice[ivoiceI].chord[iChordI] = new ChordEvent();
                         arr.voice[ivoiceI].chord[iChordI].onset = aTableBase[ ++i ];
@@ -546,17 +574,18 @@ function fillTable2( arr , aTableBase ) {
                         arr.voice[ivoiceI].chord[iChordI].note[iNoteI] = new NoteEvent();
                         arr.voice[ivoiceI].chord[iChordI].note[iNoteI].pc = aTableBase[ ++i ];
                         
-                        var onset = arr.voice[ivoiceI].chord[iChordI].onset;
+                         var dur = aTableBase[ ++i ];
+                       var onset = arr.voice[ivoiceI].chord[iChordI].onset;
                         var offset = arr.voice[ivoiceI].chord[iChordI].offset;
-                        var dur = aTableBase[ ++i ];
                         arr.voice[ivoiceI].chord[iChordI].note[iNoteI].dur = dur;
                         arr.voice[ivoiceI].chord[iChordI].note[iNoteI].offset = onset + dur;
                         arr.voice[ivoiceI].chord[iChordI].offset = Math.max(offset, onset + dur);
                         arr.endOffset = Math.max(arr.endOffset, onset + dur);
                         
                         arr.voice[ivoiceI].chord[iChordI].note[iNoteI].vel = aTableBase[ ++i ];
-                        i++;
-                        if( aTableBase[ i ] == "[" ) { // it's slot time
+                        
+                        if( aTableBase[ i+1 ] == "[" ) { // it's slot time within note
+							i++;
                             ilevel++;
                             //post("Slot: Level: ",ilevel,"\n");
                             var otherLevel = ilevel;
@@ -578,7 +607,7 @@ function fillTable2( arr , aTableBase ) {
                         while(otherLevel <= ilevel) {
                             i++;
                             switch(aTableBase[ i ]) {
-                                    case "[": ilevel++;break;
+                                    case "[": ilevel++; break;
                                     case "]": ilevel--; break;
                                     default: break;
                             }
@@ -589,10 +618,11 @@ function fillTable2( arr , aTableBase ) {
             case "]":
                 switch(ilevel){
                     case 1: // Voice
-                        iChordI = 0;
+						// post("end voice\n");
+                        iChordI = -1;
                         break;
                     case 2: // Chord
-                        iNoteI = 0;
+                        iNoteI = -1;
                         break;
                     case 3: // Note
                         break;
@@ -610,12 +640,14 @@ function fillTable2( arr , aTableBase ) {
                     case 3: // Note
                         arr.voice[ivoiceI].chord[iChordI].note[iNoteI].flag = aTableBase[ i ];
                         break;
-                }
+					default: post("ERRO! Algo errado no nivel=",ilevel,"\n"); break;
+                };
                 break;
         }
         i++;
     }
-    if( ilevel != 0 ) post("ERRO!\n");
+    if( ilevel != 0 ) post("ERRO! ilevel=",ilevel);
+    post(" last onset: ",arr.endOnset,"\n");
     
 }
 // =============================================================
@@ -653,25 +685,34 @@ function sendToRoll( i ) {
     switch( i ) {
         case 1:
             post("=== Tabela A > roll\n");
-            tabA.sendRoll2BachRoll();
+            tabA.sendRoll2BachRollChord();
             break;
         case 2:
             post("=== Tabela B > roll\n");
-            tabB.sendRoll2BachRoll();
+            tabB.sendRoll2BachRollChord();
             break;
         case 3:
             post("=== Tabela OUT > roll\n");
-            tabOUT.sendRoll2BachRoll();
+            tabOUT.sendRoll2BachRollChord();
             break;
         case 4:
             post("=== Tabela A1 > roll\n");
-            tabA1.sendRoll2BachRoll();
+            tabA1.sendRoll2BachRollChord();
             break;
         case 5:
             post("=== Tabela B1 > roll\n");
-            tabB1.sendRoll2BachRoll();
+            tabB1.sendRoll2BachRollChord();
             break;
         default:
             post("ERRO: Tabela não referenciada");
     }
+}
+// =============================================================
+function send2BachRoll( ivoice, ion, inot, id, iv) {
+    var iOnset = ion;
+    var iNote = inot;
+    var iVelo = iv;
+    var iVoice = ivoice;
+    var iDur = id;
+    outlet(0, "toBachRoll", "addchord",iVoice,"[",iOnset,"[",iNote,iDur,iVelo,"]","]" );
 }
