@@ -7,16 +7,18 @@ a.sousadias@belasartes.ulisboa.pt
 Latest release: [asd_MAX_palimpsest_filter_2024_04_03](https://github.com/asousadias/asd_patchCollection/blob/master/asd_MAX_palimpsest_filter/releases/asd_MAX_palimpsest_filter_2024_04_03.zip)
 
 ## Description:
-The “palimpsesto flt” is a Max patch, originally programmed in 2002 in OpenMusic, that transposes to the note domain the operations of filtering and morphing that we find in the audio domain.<br>
-Its operating mode is anchored on the idea of palimpsest, and can be described as follows:  given two input sequences in Bach.roll format (a source file and a modulator file), it produces a third Bach.roll sequence "filtering" the input 2 with input 1.<br>
-Different "Methods" adjust the behaviour of operations and result: (1) Time Adjust options adjust file lengths; (2) Gate options parameter control how input notes are kept; (3) Pitch options parameter controls how input notes are kept or transformed. For further information see Operation mode section, bellow.<br>
+The "palimpsesto flt" is a Max patch, originally programmed in OpenMusic in 2002, that transposes the operations of filtering and morphing found in the audio domain to the note domain.<br>
+Its operation is based on the idea of the palimpsest, and can be described as follows: given two input sequences in Bach.roll format (a source file and a modulator file), it produces a third Bach.roll sequence by "filtering" input 2 with input 1.<br>
+Different "methods" adjust the behaviour of the operations and the result: (1) Time Adjust options adjust the file lengths; (2) Gate options parameter control how input notes are preserved; (3) Pitch options parameter control how input notes are preserved or transformed. See the Operation Mode section below for more information.<br>
 
 ## Operation mode:
 - Feed the js object "asd_palimpsesto-flt.js" with two sequences. For each sequence, set slot (A or B) to store it.
 - Choose options (Time, Gate and Pitch).
 - Bang the js object (text button "Process"). Output is sent a "Bach.roll" object.
 - See contents of each slot (use _sendToRoll n_ message - or use the menu "Send to slot Bach.roll").
-NOTE: Slots A1 and B1 are working slots with time adjustment according to options choosed.
+NOTES:<br>
+1) Slots A1 and B1 are working slots with time adjustment according to the selected options.<br>
+2) Due to the restriction of the array size to 32767 elements, the input is limited. Consider splitting large Roll files.<br>
 
 ### Input:
 The js object accepts the following input messages:
@@ -54,7 +56,6 @@ The current folder consists of:<br>
 - asd_palimpsesto-flt.js - the js file containing the core processing.<br>
 - README.md - this read me file.<br>
 - _asdPalimp\_A0.mid_ and _asdPalimp\_B0.mid_ - two MIDI files for testing.<br>
-Note: Due to limitations in the array sizes to 32767 elements, input is limited. Considerer to split large Roll files. 
 
 ## References
 For operating details see:<br>
@@ -62,7 +63,7 @@ Sousa Dias, A. (2008) Two examples of free transposition of audio processing tec
 
 
 ## Revision history:
-- 2024, March (Max version): major revision. Code fully revised. Pitch processing splited into two processes: gate and "spectral/pitch" adjustment"; added experimental time adjustment through last onset comparision.
+- 2024, March-April (Max version): major revision. Code fully revised. Pitch processing splited into two processes: gate and "spectral/pitch" adjustment"; added experimental time adjustment through last onset comparision.
 - 2022, March; release of Max version. Requires the Bach library.
 - 2018, May (OM version): Release on GitHub<br>
 - 2010, Jan 12 (OM version): Minor correction to adjust select values on select object<br>
