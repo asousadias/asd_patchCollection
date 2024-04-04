@@ -13,7 +13,7 @@ NOTE: this is a working in progress, continuous update.<br>
 
 ## Patch List
 - asd_MAX_glosaFigurs - ornamentation generator crossing the Ortiz' _glosas_ (1553) and Jarrel's _Gel_ (1992) (Last update: 2022.03.24)
-- asd_MAX_palimpsest_filter - a "bandpass/morpher" patch. (Last update: 2024.04.04)
+- asd_MAX_palimpsest_filter - a "bandpass/morpher" patch. (__Last update: 2024.04.04__)
 - asdDecorrelation - Temporal micro-decorrelation, based upon Horacio Vaggione's ideas.  (Last update: 2022.03.24)
 - asdSyntaxParser - Splits a multicommand line in single line commands according to a defined grammar. (Last update: 2023.05.09)
 
