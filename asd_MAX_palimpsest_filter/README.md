@@ -12,10 +12,10 @@ Its operation is based on the idea of the palimpsest, and can be described as fo
 Different "methods" adjust the behaviour of the operations and the result: (1) Time Adjust options adjust the file lengths; (2) Gate options parameter control how input notes are preserved; (3) Pitch options parameter control how input notes are preserved or transformed. See the Operation Mode section below for more information.<br>
 
 ## Operation mode:
-- Feed the js object "asd_palimpsesto-flt.js" with two sequences. For each sequence, set slot (A or B) to store it.
-- Choose options (Time, Gate and Pitch).
-- Bang the js object (text button "Process"). Output is sent a "Bach.roll" object.
-- See contents of each slot (use _sendToRoll n_ message - or use the menu "Send to slot Bach.roll").
+- Feed the js object "asd_palimpsesto-flt.js" with two sequences. For each sequence, set slot (A or B) to store it.<br>
+- Choose options (Time, Gate and Pitch).<br>
+- Bang the js object (text button "Process"). Output is sent a "Bach.roll" object.<br>
+- See contents of each slot (use _sendToRoll n_ message - or use the menu "Send to slot Bach.roll").<br>
 NOTES:<br>
 1) Slots A1 and B1 are working slots with time adjustment according to the selected options.<br>
 2) Due to the restriction of the array size to 32767 elements, the input is limited. Consider splitting large Roll files.<br>
