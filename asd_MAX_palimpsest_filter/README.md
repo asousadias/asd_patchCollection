@@ -16,6 +16,7 @@ Different "methods" adjust the behaviour of the operations and the result: (1) T
 - Choose options (Time, Gate and Pitch).<br>
 - Bang the js object (text button "Process"). Output is sent a "Bach.roll" object.<br>
 - See contents of each slot (use _sendToRoll n_ message - or use the menu "Send to slot Bach.roll").<br>
+
 NOTES:<br>
 1) Slots A1 and B1 are working slots with time adjustment according to the selected options.<br>
 2) Due to the restriction of the array size to 32767 elements, the input is limited. Consider splitting large Roll files.<br>
