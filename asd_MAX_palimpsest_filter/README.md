@@ -9,7 +9,10 @@ Latest release: [asd_MAX_palimpsest_filter_2024_04_03](https://github.com/asousa
 ## Description:
 The "palimpsesto flt" is a Max patch, originally programmed in OpenMusic in 2002, that transposes the operations of filtering and morphing found in the audio domain to the note domain.<br>
 Its operation is based on the idea of the palimpsest, and can be described as follows: given two input sequences in Bach.roll format (a source file and a modulator file), it produces a third Bach.roll sequence by "filtering" input 2 with input 1.<br>
-Different "methods" adjust the behaviour of the operations and the result: (1) Time Adjust options adjust the file lengths; (2) Gate options parameter control how input notes are preserved; (3) Pitch options parameter control how input notes are preserved or transformed. See the Operation Mode section below for more information.<br>
+Different "methods" adjust the behaviour of the operations and the result:<br>
+- (1) Time Adjust options adjust the file lengths;<br>
+- (2) Gate options parameter control how input notes are preserved;<br>
+- (3) Pitch options parameter control how input notes are preserved or transformed. See the Operation Mode section below for more information.<br>
 
 ## Operation mode:
 - Feed the js object "asd_palimpsesto-flt.js" with two sequences. For each sequence, set slot (A or B) to store it.<br>
@@ -36,8 +39,8 @@ example:<br>
   - 3-Same as 1 (scale input A to time length B), but takes last onsets as references for scaling factor.<br>
   - 4-Same as 2 (scale input B to time length A), but takes last onsets as references for scaling factor.<br>
 - _setMethodGate n_  - GATE Method (integer):<br>
-  -0-Continuous pass -  adjusts note onsets and offsets inputs (slot A) to modulator events (slot B).<br>
-  -0-Attack only pass -   passes only notes that have an attack inside modulator events time span.<br>
+  - 0-Continuous pass -  adjusts note onsets and offsets inputs (slot A) to modulator events (slot B).<br>
+  - 1-Attack only pass -   passes only notes that have an attack inside modulator events time span.<br>
 - _setMethodPitch n_   - PITCH Method (integer):<br>
   - 0-Bypass - Passes all notes unchanged after de gate pass.<br>
   - 1-Band pass -Keeps only the gated notes from A that are equal to the notes of B.<br>
