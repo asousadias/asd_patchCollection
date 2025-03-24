@@ -30,7 +30,7 @@ example:<br>
 - _bang_ - Start process. Compute output.
 
 - _setTimeAdjustment n_   - Time adjust (integer):<br>
- -- 0-No time change. Working slots will have same length as their original slots;<br>
+ - 0-No time change. Working slots will have same length as their original slots;<br>
  -- 1-Scale input A to time length B (time adjustment takes biggest offsets).<br>
 -- 2- Scale input B to time length A.<br>
 -- 3-Same as 1 (scale input A to time length B), but takes last onsets as references for scaling factor.<br>
