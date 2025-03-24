@@ -30,22 +30,22 @@ example:<br>
 - _bang_ - Start process. Compute output.
 
 - _setTimeAdjustment n_   - Time adjust (integer):<br>
--- 0-No time change. Working slots will have same length as their original slots;
--- 1-Scale input A to time length B (time adjustment takes biggest offsets).
--- 2- Scale input B to time length A.
--- 3-Same as 1 (scale input A to time length B), but takes last onsets as references for scaling factor.
--- 4-Same as 2 (scale input B to time length A), but takes last onsets as references for scaling factor.
+-- 0-No time change. Working slots will have same length as their original slots;<br>
+-- 1-Scale input A to time length B (time adjustment takes biggest offsets).<br>
+-- 2- Scale input B to time length A.<br>
+-- 3-Same as 1 (scale input A to time length B), but takes last onsets as references for scaling factor.<br>
+-- 4-Same as 2 (scale input B to time length A), but takes last onsets as references for scaling factor.<br>
 - _setMethodGate n_  - GATE Method (integer):<br>
---0-Continuous pass -  adjusts note onsets and offsets inputs (slot A) to modulator events (slot B).
---0-Attack only pass -   passes only notes that have an attack inside modulator events time span.
+--0-Continuous pass -  adjusts note onsets and offsets inputs (slot A) to modulator events (slot B).<br>
+--0-Attack only pass -   passes only notes that have an attack inside modulator events time span.<br>
 - _setMethodPitch n_   - PITCH Method (integer):<br>
--- 0-Bypass - Passes all notes unchanged after de gate pass.
--- 1-Band pass -Keeps only the gated notes from A that are equal to the notes of B.
--- 2-Band pass Pc -Keeps only the gated notes from A that have the same pitch class as the notes of B.
--- 3-Band pass adjust -“Rounds” all notes from A to the nearest notes of B.
--- 4-Band pass adjust Pc -“Rounds” all notes from A to the nearest Pc note of B.
-- _sendToRoll n_ - Send contens of slots A, B, OUT, A1 or B1 to _Bach.roll_ object.
-- _infoPrint n_ - Send contens of slots A, B, OUT, A1 or B1 to the Max Console.
+-- 0-Bypass - Passes all notes unchanged after de gate pass.<br>
+-- 1-Band pass -Keeps only the gated notes from A that are equal to the notes of B.<br>
+-- 2-Band pass Pc -Keeps only the gated notes from A that have the same pitch class as the notes of B.<br>
+-- 3-Band pass adjust -“Rounds” all notes from A to the nearest notes of B.<br>
+-- 4-Band pass adjust Pc -“Rounds” all notes from A to the nearest Pc note of B.<br>
+- _sendToRoll n_ - Send contens of slots A, B, OUT, A1 or B1 to _Bach.roll_ object.<br>
+- _infoPrint n_ - Send contens of slots A, B, OUT, A1 or B1 to the Max Console.<br>
 
 ### Output:
 - Instructions for a _Bach.roll_ object.
